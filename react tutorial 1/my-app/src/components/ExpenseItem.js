@@ -2,15 +2,16 @@ import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
 import ExepenseDetails from "./ExpenseDetails";
 
+
 function ExpenseItem(props) {
 
     return (
-        <div>
+        <div className="expense-item">
 
-            <ExepenseDetails title={props.title} />
+            <ExepenseDetails title={props.title} className="expense-item__description" />
             <ExpenseDate date={props.date}></ExpenseDate>
             <ol>
-                <li> <ExepenseDetails amount={props.amount} /></li>
+                <li className="expense-item__price"> <ExepenseDetails amount={props.amount} /></li>
                 <li>{props.location}</li>
             </ol>
 
