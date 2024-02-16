@@ -17,7 +17,7 @@ function ExpenseItem(props) {
 
 
 
-        </div>
+        </div >
     )
 }
 
