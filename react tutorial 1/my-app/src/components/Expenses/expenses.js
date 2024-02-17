@@ -1,8 +1,8 @@
 import "./expenses.css"
 import ExpenseItem from "./ExpenseItem";
-import Card from "./Card";
+import Card from "../UI/Card";
 
-function Expenses() {
+const Expenses = () => {
     const expense = [
         {
             expenseDate: new Date(2021, 2, 28),
