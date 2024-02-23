@@ -6,6 +6,11 @@ import Card from "../UI/Card"
 
 const ExpenseItem = (props) => {
 
+
+    const deleteHandler = () => {
+        console.log("Expense deleted");
+    };
+
     return (
         <Card className="expense-item">
 
@@ -15,9 +20,7 @@ const ExpenseItem = (props) => {
                 <li className="expense-item__price"> <ExepenseDetails amount={props.amount} /></li>
                 <li>{props.location}</li>
             </ol>
-
-
-
+            <delete onClick={deleteHandler}>Delete</delete>
         </ Card>
     )
 }
