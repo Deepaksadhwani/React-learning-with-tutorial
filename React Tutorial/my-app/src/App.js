@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import Expenses from './components/Expenses/expenses';
+import NewExpense from './components/New Expense/NewExpense';
+
 
 const App = () => {
 
   return (
     <div>
-      <h1>Let's get started!</h1>
+      <NewExpense />
       <Expenses items={Expenses} />
     </div>
   );
