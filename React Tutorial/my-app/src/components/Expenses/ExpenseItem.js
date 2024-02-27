@@ -10,7 +10,7 @@ const ExpenseItem = (props) => {
     return (
         <Card className="expense-item">
 
-            < ExepenseDetails title={props.title} className="expense-item__description" />
+            <ExepenseDetails title={props.title} className="expense-item__description" />
             <ExpenseDate date={props.date}></ExpenseDate>
             <ol>
                 <li className="expense-item__price"> <ExepenseDetails amount={props.amount} /></li>
