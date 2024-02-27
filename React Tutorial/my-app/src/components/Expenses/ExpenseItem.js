@@ -17,7 +17,7 @@ const ExpenseItem = (props) => {
                 <li>{props.location}</li>
             </ol>
 
-        </ Card>
+        </Card>
     )
 }
 
