@@ -42,7 +42,7 @@ const Expenses = (props) => {
 
     ];
 
-    <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler}></ExpensesFilter >
+
     const expenseslist = [];
 
     for (let i = 0; i < expense.length; i++) {
@@ -52,6 +52,7 @@ const Expenses = (props) => {
 
     return (
         <Card className="expenses">
+            <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
             {expenseslist}
         </Card>
     )
