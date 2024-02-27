@@ -1,0 +1,17 @@
+
+.expense-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.expense-details__price{
+    font-size: 1.2rem;
+    color:#4caf50;
+}
+
+.expense-details__location{
+    font-size: 0.8rem;
+    color:navajowhite;
+}

@@ -7,14 +7,14 @@ import { useState } from 'react';
 
 const DUMMY_DATA = [
   {
-    id : "e1",
+    id: "e1",
     title: "Car Insurance",
     expenseAmount: 294.65,
     expenseDate: new Date(2021, 2, 28),
     locationOfExpenditure: "Rajasthan"
   },
   {
-    id :"e2",
+    id: "e2",
     title: "Laptop Purchase",
     expenseAmount: 45000,
     expenseDate: new Date(2021, 7, 16),
@@ -22,7 +22,7 @@ const DUMMY_DATA = [
   },
 
   {
-    id :"e3",
+    id: "e3",
     title: "Furniture",
     expenseAmount: 10000,
     expenseDate: new Date(2022, 6, 22),
@@ -30,7 +30,7 @@ const DUMMY_DATA = [
   },
 
   {
-    id : "e4",
+    id: "e4",
     title: "Washing machine",
     expenseAmount: 30000,
     expenseDate: new Date(2021, 10, 14),
@@ -48,6 +48,7 @@ const App = () => {
       return [expense, ...prevExpenses]
     });
   };
+  console.log(expenses)
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
